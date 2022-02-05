@@ -1,11 +1,11 @@
-a = input().upper()
-b = tuple(set(a))
-c = list()
+word = input().upper()
+letters = tuple(set(word))
+count = list()
 
-for i in range(len(b)):
-    c.append(a.count(b[i]))
+for i in range(len(letters)):
+    count.append(word.count(letters[i]))
 
-print(b[c.index(max(c))] if c.count(max(c)) == 1 else '?')
+print(letters[count.index(max(count))] if count.count(max(count)) == 1 else '?')
 
 '''
 리뷰:
